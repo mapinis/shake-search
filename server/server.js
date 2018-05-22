@@ -19,6 +19,7 @@ app.use('/graphql', bodyParser.json(), graphqlExpress({ schema }));
 
 if(env.DEV) {
   app.use('/graphiql', graphiqlExpress({ endpointURL: '/graphql'}));
+  console.log("DEV enabled");
 }
 
 app.get('/*', express.static('../client/build/'));
