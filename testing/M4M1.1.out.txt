@@ -1,0 +1,89 @@
+<line act="1" scene="1" line="1" speaker="DUKE VINCENTIO">Escalus.</line>
+<line act="1" scene="1" line="2" speaker="ESCALUS">My lord.</line>
+<line act="1" scene="1" line="3" speaker="DUKE VINCENTIO">Of government the properties to unfold,</line>
+<line act="1" scene="1" line="4" speaker="DUKE VINCENTIO">Would seem in me to affect speech and discourse;</line>
+<line act="1" scene="1" line="5" speaker="DUKE VINCENTIO">Since I am put to know that your own science</line>
+<line act="1" scene="1" line="6" speaker="DUKE VINCENTIO">Exceeds, in that, the lists of all advice</line>
+<line act="1" scene="1" line="7" speaker="DUKE VINCENTIO">My strength can give you: then no more remains,</line>
+<line act="1" scene="1" line="8" speaker="DUKE VINCENTIO">But that to your sufficiency as your Worth is able,</line>
+<line act="1" scene="1" line="9" speaker="DUKE VINCENTIO">And let them work. The nature of our people,</line>
+<line act="1" scene="1" line="10" speaker="DUKE VINCENTIO">Our city's institutions, and the terms</line>
+<line act="1" scene="1" line="11" speaker="DUKE VINCENTIO">For common justice, you're as pregnant in</line>
+<line act="1" scene="1" line="12" speaker="DUKE VINCENTIO">As art and practise hath enriched any</line>
+<line act="1" scene="1" line="13" speaker="DUKE VINCENTIO">That we remember. There is our commission,</line>
+<line act="1" scene="1" line="14" speaker="DUKE VINCENTIO">From which we would not have you warp. Call hither,</line>
+<line act="1" scene="1" line="15" speaker="DUKE VINCENTIO">I say, bid come before us Angelo.</line>
+<line act="1" scene="1" line="16" speaker="DUKE VINCENTIO">What figure of us think you he will bear?</line>
+<line act="1" scene="1" line="17" speaker="DUKE VINCENTIO">For you must know, we have with special soul</line>
+<line act="1" scene="1" line="18" speaker="DUKE VINCENTIO">Elected him our absence to supply,</line>
+<line act="1" scene="1" line="19" speaker="DUKE VINCENTIO">Lent him our terror, dress'd him with our love,</line>
+<line act="1" scene="1" line="20" speaker="DUKE VINCENTIO">And given his deputation all the organs</line>
+<line act="1" scene="1" line="21" speaker="DUKE VINCENTIO">Of our own power: what think you of it?</line>
+<line act="1" scene="1" line="22" speaker="ESCALUS">If any in Vienna be of worth</line>
+<line act="1" scene="1" line="23" speaker="ESCALUS">To undergo such ample grace and honour,</line>
+<line act="1" scene="1" line="24" speaker="ESCALUS">It is Lord Angelo.</line>
+<line act="1" scene="1" line="25" speaker="DUKE VINCENTIO">                  Look where he comes.</line>
+<line act="1" scene="1" line="26" speaker="ANGELO">Always obedient to your grace's will,</line>
+<line act="1" scene="1" line="27" speaker="ANGELO">I come to know your pleasure.</line>
+<line act="1" scene="1" line="28" speaker="DUKE VINCENTIO">Angelo,</line>
+<line act="1" scene="1" line="29" speaker="DUKE VINCENTIO">There is a kind of character in thy life,</line>
+<line act="1" scene="1" line="30" speaker="DUKE VINCENTIO">That to the observer doth thy history</line>
+<line act="1" scene="1" line="31" speaker="DUKE VINCENTIO">Fully unfold. Thyself and thy belongings</line>
+<line act="1" scene="1" line="32" speaker="DUKE VINCENTIO">Are not thine own so proper as to waste</line>
+<line act="1" scene="1" line="33" speaker="DUKE VINCENTIO">Thyself upon thy virtues, they on thee.</line>
+<line act="1" scene="1" line="34" speaker="DUKE VINCENTIO">Heaven doth with us as we with torches do,</line>
+<line act="1" scene="1" line="35" speaker="DUKE VINCENTIO">Not light them for themselves; for if our virtues</line>
+<line act="1" scene="1" line="36" speaker="DUKE VINCENTIO">Did not go forth of us, 'twere all alike</line>
+<line act="1" scene="1" line="37" speaker="DUKE VINCENTIO">As if we had them not. Spirits are not finely touch'd</line>
+<line act="1" scene="1" line="38" speaker="DUKE VINCENTIO">But to fine issues, nor Nature never lends</line>
+<line act="1" scene="1" line="39" speaker="DUKE VINCENTIO">The smallest scruple of her excellence</line>
+<line act="1" scene="1" line="40" speaker="DUKE VINCENTIO">But, like a thrifty goddess, she determines</line>
+<line act="1" scene="1" line="41" speaker="DUKE VINCENTIO">Herself the glory of a creditor,</line>
+<line act="1" scene="1" line="42" speaker="DUKE VINCENTIO">Both thanks and use. But I do bend my speech</line>
+<line act="1" scene="1" line="43" speaker="DUKE VINCENTIO">To one that can my part in him advertise;</line>
+<line act="1" scene="1" line="44" speaker="DUKE VINCENTIO">Hold therefore, Angelo:--</line>
+<line act="1" scene="1" line="45" speaker="DUKE VINCENTIO">In our remove be thou at full ourself;</line>
+<line act="1" scene="1" line="46" speaker="DUKE VINCENTIO">Mortality and mercy in Vienna</line>
+<line act="1" scene="1" line="47" speaker="DUKE VINCENTIO">Live in thy tongue and heart: old Escalus,</line>
+<line act="1" scene="1" line="48" speaker="DUKE VINCENTIO">Though first in question, is thy secondary.</line>
+<line act="1" scene="1" line="49" speaker="DUKE VINCENTIO">Take thy commission.</line>
+<line act="1" scene="1" line="50" speaker="ANGELO">Now, good my lord,</line>
+<line act="1" scene="1" line="51" speaker="ANGELO">Let there be some more test made of my metal,</line>
+<line act="1" scene="1" line="52" speaker="ANGELO">Before so noble and so great a figure</line>
+<line act="1" scene="1" line="53" speaker="ANGELO">Be stamp'd upon it.</line>
+<line act="1" scene="1" line="54" speaker="DUKE VINCENTIO">No more evasion:</line>
+<line act="1" scene="1" line="55" speaker="DUKE VINCENTIO">We have with a leaven'd and prepared choice</line>
+<line act="1" scene="1" line="56" speaker="DUKE VINCENTIO">Proceeded to you; therefore take your honours.</line>
+<line act="1" scene="1" line="57" speaker="DUKE VINCENTIO">Our haste from hence is of so quick condition</line>
+<line act="1" scene="1" line="58" speaker="DUKE VINCENTIO">That it prefers itself and leaves unquestion'd</line>
+<line act="1" scene="1" line="59" speaker="DUKE VINCENTIO">Matters of needful value. We shall write to you,</line>
+<line act="1" scene="1" line="60" speaker="DUKE VINCENTIO">As time and our concernings shall importune,</line>
+<line act="1" scene="1" line="61" speaker="DUKE VINCENTIO">How it goes with us, and do look to know</line>
+<line act="1" scene="1" line="62" speaker="DUKE VINCENTIO">What doth befall you here. So, fare you well;</line>
+<line act="1" scene="1" line="63" speaker="DUKE VINCENTIO">To the hopeful execution do I leave you</line>
+<line act="1" scene="1" line="64" speaker="DUKE VINCENTIO">Of your commissions.</line>
+<line act="1" scene="1" line="65" speaker="ANGELO">Yet give leave, my lord,</line>
+<line act="1" scene="1" line="66" speaker="ANGELO">That we may bring you something on the way.</line>
+<line act="1" scene="1" line="67" speaker="DUKE VINCENTIO">My haste may not admit it;</line>
+<line act="1" scene="1" line="68" speaker="DUKE VINCENTIO">Nor need you, on mine honour, have to do</line>
+<line act="1" scene="1" line="69" speaker="DUKE VINCENTIO">With any scruple; your scope is as mine own</line>
+<line act="1" scene="1" line="70" speaker="DUKE VINCENTIO">So to enforce or qualify the laws</line>
+<line act="1" scene="1" line="71" speaker="DUKE VINCENTIO">As to your soul seems good. Give me your hand:</line>
+<line act="1" scene="1" line="72" speaker="DUKE VINCENTIO">I'll privily away. I love the people,</line>
+<line act="1" scene="1" line="73" speaker="DUKE VINCENTIO">But do not like to stage me to their eyes:</line>
+<line act="1" scene="1" line="74" speaker="DUKE VINCENTIO">Through it do well, I do not relish well</line>
+<line act="1" scene="1" line="75" speaker="DUKE VINCENTIO">Their loud applause and Aves vehement;</line>
+<line act="1" scene="1" line="76" speaker="DUKE VINCENTIO">Nor do I think the man of safe discretion</line>
+<line act="1" scene="1" line="77" speaker="DUKE VINCENTIO">That does affect it. Once more, fare you well.</line>
+<line act="1" scene="1" line="78" speaker="ANGELO">The heavens give safety to your purposes!</line>
+<line act="1" scene="1" line="79" speaker="ESCALUS">Lead forth and bring you back in happiness!</line>
+<line act="1" scene="1" line="80" speaker="DUKE">I thank you. Fare you well.</line>
+<line act="1" scene="1" line="81" speaker="ESCALUS">I shall desire you, sir, to give me leave</line>
+<line act="1" scene="1" line="82" speaker="ESCALUS">To have free speech with you; and it concerns me</line>
+<line act="1" scene="1" line="83" speaker="ESCALUS">To look into the bottom of my place:</line>
+<line act="1" scene="1" line="84" speaker="ESCALUS">A power I have, but of what strength and nature</line>
+<line act="1" scene="1" line="85" speaker="ESCALUS">I am not yet instructed.</line>
+<line act="1" scene="1" line="86" speaker="ANGELO">'Tis so with me. Let us withdraw together,</line>
+<line act="1" scene="1" line="87" speaker="ANGELO">And we may soon our satisfaction have</line>
+<line act="1" scene="1" line="88" speaker="ANGELO">Touching that point.</line>
+<line act="1" scene="1" line="89" speaker="ESCALUS">I'll wait upon your honour.</line>
