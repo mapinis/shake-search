@@ -1,6 +1,6 @@
 from html.parser import HTMLParser
 
-play = open("M4M1.1.txt").read()
+play = open("M4MFull.txt").read()
 
 outLines = []
 
@@ -23,11 +23,11 @@ class PlayParser(HTMLParser):
     
     def handle_data(self, data):
         if self.get_starttag_text()[0:2] == "<A":
-            outLines.append('<line act="%s" scene="%s" line="%s" speaker="%s">%s</line>\n' % (self._act, self._scene, self._line, self._speaker, data))
+            outLines.append('<line act="%s" scene="%s" line="%s" speaker="%s">%s</line>' % (self._act, self._scene, self._line, self._speaker, data))
         elif self.get_starttag_text()[0:3] == "<b>" and data[0] != "\n":
             self._speaker = data
 
 parser = PlayParser()
 parser.feed(play)
 
-open("M4M1.1.out.txt", "w").writelines(outLines)
+open("M4MFull.out.txt", "w").writelines(outLines)
