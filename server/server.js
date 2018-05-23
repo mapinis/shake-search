@@ -17,8 +17,8 @@ app.use(require('morgan')('dev'));
 
 app.use('/graphql', bodyParser.json(), graphqlExpress({ schema }));
 
-if(env.DEV) {
-  app.use('/graphiql', graphiqlExpress({ endpointURL: '/graphql'}));
+if (env.DEV) {
+  app.use('/graphiql', graphiqlExpress({ endpointURL: '/graphql' }));
   console.log("DEV enabled");
 }
 
