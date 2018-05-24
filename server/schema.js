@@ -80,13 +80,10 @@ const resolvers = {
         args.startNum = 0;
       }
 
-      const searchQuery = trim(args.searchQuery.toLowerCase());
+      const searchQuery = trim(args.searchQuery);
 
       plays[args.play].forEach(line => {
-        if (line.text.toLowerCase().indexOf(searchQuery) != -1 && (
-          line.text.toLowerCase().indexOf(searchQuery + " ") == 0 ||
-          line.text.toLowerCase().includes(" " + searchQuery + " ") ||
-          line.text.toLowerCase().indexOf(" " + searchQuery) == line.text.length - searchQuery.length - 1)) {
+        if (line.text.search(new RegExp('(^|\\W)(' + searchQuery + ')($|\\W)', 'gi')) != -1) {
           matches.push(line);
         }
       });
