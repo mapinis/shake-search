@@ -1,15 +1,14 @@
 const fs = require('fs');
-const readline = require('readline');
 const htmlparser = require('htmlparser');
 
 const pattern = "him";
 
 const parser = new htmlparser.Parser(new htmlparser.DefaultHandler((error, dom) => {
-    if(error) {
+    if (error) {
         console.log(error);
     } else {
         dom.forEach(line => {
-            if(line.children[0].raw.includes(pattern)){
+            if (line.children[0].raw.includes(pattern)) {
                 console.log(line.children[0].raw);
             }
         });
@@ -17,7 +16,7 @@ const parser = new htmlparser.Parser(new htmlparser.DefaultHandler((error, dom) 
 }));
 
 fs.readFile('M4MFull.out.txt', (err, data) => {
-    if(err) {
+    if (err) {
         console.log(err);
     } else {
         parser.parseComplete(data);

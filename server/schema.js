@@ -1,6 +1,7 @@
 const { makeExecutableSchema } = require('graphql-tools');
 const fs = require('fs');
 const htmlparser = require('htmlparser');
+const trim = require('trim');
 
 const plays = {};
 
@@ -45,7 +46,7 @@ fs.readdir('plays', (err, files) => {
 // Define Types of Data and Query and Resolvers
 const typeDefs = `
   type Query {
-    lines(play: String!, searchQuery: String!): Result
+    lines(play: String!, searchQuery: String!, maxResults: Int, startNum: Int): Result
   }
 
   type Result {
@@ -72,13 +73,30 @@ const resolvers = {
     lines: (obj, args, context) => {
       matches = [];
 
+      if (!args.maxResults) {
+        args.maxResults = 0;
+      }
+      if (!args.startNum) {
+        args.startNum = 0;
+      }
+
+      const searchQuery = trim(args.searchQuery.toLowerCase());
+
       plays[args.play].forEach(line => {
-        if (line.text.includes(args.searchQuery)) {
+        if (line.text.toLowerCase().indexOf(searchQuery) != -1 && (
+          line.text.toLowerCase().indexOf(searchQuery + " ") == 0 ||
+          line.text.toLowerCase().includes(" " + searchQuery + " ") ||
+          line.text.toLowerCase().indexOf(" " + searchQuery) == line.text.length - searchQuery.length - 1)) {
           matches.push(line);
         }
       });
 
-      return {number: matches.length, lines: matches};
+      return {
+        number: matches.length,
+        lines: (args.maxResults < 1 ?
+          matches.slice(args.startNum) :
+          matches.slice(args.startNum, args.startNum + args.maxResults))
+      };
     }
   }
 };
