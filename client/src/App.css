@@ -1,0 +1,12 @@
+.playSelect {
+  display: inline-block;
+  min-width: 200px;
+}
+
+.searchSentence {
+  margin-top: 20px;
+}
+
+.App {
+  margin-left: 30px;
+}
