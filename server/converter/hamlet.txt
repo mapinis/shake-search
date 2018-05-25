@@ -1,3 +1,6 @@
+<!-- Source: MIT's Shakespeare Database -->
+<!-- http://shakespeare.mit.edu/hamlet/full.html --> 
+
 <H3>ACT I</h3>
 <h3>SCENE I. Elsinore. A platform before the castle.</h3>
 <p><blockquote>
