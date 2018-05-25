@@ -27,7 +27,7 @@ fs.readdir('plays', (err, files) => {
               }
             });
           });
-          plays[file] = lines;
+          plays[file.replace('.txt', '')] = lines;
         }
       }), { verbose: false });
 
