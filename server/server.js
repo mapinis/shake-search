@@ -1,5 +1,6 @@
 const dotenv = require('dotenv');
 const dotenvParse = require('dotenv-parse-variables');
+const cors = require('cors');
 
 const env = dotenvParse(dotenv.config().parsed);
 
@@ -12,6 +13,8 @@ const schema = require('./schema').schema;
 const PORT = env.PORT || 8000;
 
 const app = express();
+
+app.use(cors());
 
 app.use(require('morgan')('dev'));
 

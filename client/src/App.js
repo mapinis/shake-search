@@ -1,28 +1,32 @@
 import React, { Component } from 'react';
-import { Select } from 'antd';
+import { Input, Select } from 'antd';
+
 import 'antd/dist/antd.css';
 import './App.css';
 
+import SearchResults from "./SearchResults";
 
 class App extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      chosenPlay: "hamlet",
-      results: []
-    }
+      chosenPlay: 'hamlet',
+      searchQuery: null
+    };
   }
 
   changePlay = value => {
     this.setState({
       chosenPlay: value
     });
-  }
+  };
 
   render() {
-
-    searchAfter = (
-      <Select defaultValue="hamlet" className="playSelect" onChange={this.changePlay}>
+    const searchAfter = (
+      <Select
+        defaultValue="hamlet"
+        className="playSelect"
+        onChange={this.changePlay}>
         <Select.Option value="hamlet">Hamlet</Select.Option>
         <Select.Option value="measure">Measure for Measure</Select.Option>
         <Select.Option value="henryv">Henry V</Select.Option>
@@ -31,13 +35,21 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div className="searchSentence">
-
+        <div className="topHeader">
+          <h1 className="title">shake-search</h1>
+          <h3 className="desc">search shakespeare's plays</h3>
+          <Input.Search
+            className="search"
+            placeholder="Search all lines"
+            enterButton
+            size="large"
+            addonBefore={searchAfter}
+            onSearch={value => this.setState({ searchQuery: value })}
+          />
         </div>
         <div className="results">
-          {this.state.results.length !== 0 && this.state.results}
-          {this.state.results.length === 0 && (
-            <div>Hit go to search</div>
+          {this.state.searchQuery && (
+            <SearchResults play={this.state.chosenPlay} searchQuery={this.state.searchQuery} />
           )}
         </div>
       </div>
