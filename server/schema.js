@@ -6,6 +6,7 @@ const trim = require('trim');
 const plays = {};
 
 // Loading of play contents
+console.log("Starting to Parse Plays");
 fs.readdir('plays', (err, files) => {
   if (err) {
     console.log(err);
@@ -36,6 +37,7 @@ fs.readdir('plays', (err, files) => {
           console.log(err);
         } else {
           parser.parseComplete(data);
+          console.log("\tParsed " + file);
         }
       });
     });
