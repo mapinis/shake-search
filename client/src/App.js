@@ -10,6 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      searchPlay: 'hamlet',
       chosenPlay: 'hamlet',
       searchQuery: null
     };
@@ -44,12 +45,12 @@ class App extends Component {
             enterButton
             size="large"
             addonBefore={searchAfter}
-            onSearch={value => this.setState({ searchQuery: value })}
+            onSearch={value => this.setState(state => ({ searchQuery: value, searchPlay: state.chosenPlay }))}
           />
         </div>
         <div className="results">
           {this.state.searchQuery && (
-            <SearchResults play={this.state.chosenPlay} searchQuery={this.state.searchQuery} />
+            <SearchResults play={this.state.searchPlay} searchQuery={this.state.searchQuery} />
           )}
         </div>
       </div>
