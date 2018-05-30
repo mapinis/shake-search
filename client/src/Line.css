@@ -1,0 +1,19 @@
+.location {
+    font-style: normal;
+    width: 75px;
+}
+
+.speaker {
+    font-weight: bolder;
+}
+
+.text {
+    margin-left: 0.4em;
+}
+
+.line {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row;
+}

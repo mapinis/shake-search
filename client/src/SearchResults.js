@@ -2,6 +2,9 @@ import React from 'react';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 
+import Line from './Line';
+import './SearchResults.css'
+
 const SearchResults = ({ play, searchQuery }) => (
   <Query
     query={gql`
@@ -20,25 +23,17 @@ const SearchResults = ({ play, searchQuery }) => (
     `}
     variables={{ play, searchQuery }}>
     {({ loading, error, data }) => {
-      if (loading) return <div>Loading...</div>;
+      if (loading) return <div className="loadingResults">Loading...</div>;
       if (error) return error.message;
 
       return (
         <div>
-          Found {data.lines.number} lines containing "{searchQuery}"
-          {data.lines.lines.map(({ text, act, scene, line, speaker }) => (
-            <div>
-              <h2 className="lineLoc">
-                {act +
-                  ' ' +
-                  scene +
-                  ' ' +
-                  line}
-              </h2>
-              <h2 className="lineText">
-                {speaker + ': ' + text}
-              </h2>
-            </div>
+          <br /> 
+          <div className="resultsNum">
+            Found {data.lines.number} lines containing the word "{searchQuery}"
+          </div>
+          {data.lines.lines.map(line => (
+            <Line line={line} />
           ))}
         </div>
       );
