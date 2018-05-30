@@ -20,12 +20,10 @@ fs.readdir('plays', (err, files) => {
           dom.forEach(line => {
             lines.push({
               text: line.children[0].data,
-              details: {
-                act: parseInt(line.attribs.act),
-                scene: parseInt(line.attribs.scene),
-                line: parseInt(line.attribs.line),
-                speaker: line.attribs.speaker
-              }
+              act: parseInt(line.attribs.act),
+              scene: parseInt(line.attribs.scene),
+              line: parseInt(line.attribs.line),
+              speaker: line.attribs.speaker
             });
           });
           plays[file.replace('.txt', '')] = lines;
@@ -58,10 +56,6 @@ const typeDefs = `
 
   type Line {
     text: String
-    details: LineDetails
-  }
-
-  type LineDetails {
     act: Int
     scene: Int
     line: Int

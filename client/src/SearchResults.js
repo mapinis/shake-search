@@ -10,12 +10,10 @@ const SearchResults = ({ play, searchQuery }) => (
           number
           lines {
             text
-            details {
-              speaker
-              act
-              scene
-              line
-            }
+            speaker
+            act
+            scene
+            line
           }
         }
       }
@@ -28,17 +26,17 @@ const SearchResults = ({ play, searchQuery }) => (
       return (
         <div>
           Found {data.lines.number} lines containing "{searchQuery}"
-          {data.lines.lines.map(({ text, details }) => (
+          {data.lines.lines.map(({ text, act, scene, line, speaker }) => (
             <div>
               <h2 className="lineLoc">
-                {details.act +
+                {act +
                   ' ' +
-                  details.scene +
+                  scene +
                   ' ' +
-                  details.line}
+                  line}
               </h2>
               <h2 className="lineText">
-                {details.speaker + ': ' + text}
+                {speaker + ': ' + text}
               </h2>
             </div>
           ))}
