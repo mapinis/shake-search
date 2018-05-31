@@ -1,16 +1,13 @@
-const dotenv = require('dotenv');
-const dotenvParse = require('dotenv-parse-variables');
 const cors = require('cors');
-
-const env = dotenvParse(dotenv.config().parsed);
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const { graphqlExpress, graphiqlExpress } = require('apollo-server-express');
 
+require('dotenv').config();
+
 const schema = require('./schema').schema;
 
-const PORT = env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 
 const app = express();
 
@@ -20,7 +17,7 @@ app.use(require('morgan')('dev'));
 
 app.use('/graphql', bodyParser.json(), graphqlExpress({ schema }));
 
-if (env.DEV) {
+if (process.env.DEV === 'true') {
   app.use('/graphiql', graphiqlExpress({ endpointURL: '/graphql' }));
   console.log("DEV enabled");
 }
