@@ -1,7 +1,7 @@
 # shake-search
 ## Search Shakespeare's Plays
 
-Currently Live @ shake-search.herokuapp.com
+Currently Live @ http://shake-search.herokuapp.com
 
 Select a play, input a word, and the site will show all lines in that play with that word and their speaker and location. Does not work across lines.
 
